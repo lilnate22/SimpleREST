@@ -1,0 +1,30 @@
+<button class="btn btn-success" style="float:right; margin: 3px;" ng-click="open('lg')"><span class="glyphicon glyphicon-plus-sign">Add</span></button>
+        
+        <table ng-table="tableParams" class="table table-bordered table-hover dataTable">
+        <tr ng-repeat="user in $data">
+            <td data-title="'Name'">{{user.name}}</td>
+            <td data-title="'Cost'">{{user.cost}}</td>
+            <td data-title="'Price'">{{user.price}}</td>
+            <td data-title="'Profit'">{{user.profit}}</td>
+        </tr>
+        </table>
+        <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title">Create a New Item Record</h3>
+        </div>
+        <div class="modal-body">
+              <input type="text" name="name" ng-model="itemForm.name"  class="form-control" placeholder="Name of Item">
+              <div class="input-group" style="margin:1em;">
+                <span class="input-group-addon">$</span>
+                <input type="text" name="price" class="form-control" ng-model="itemForm.price" placeholder="Price of Item"><br/>
+              </div>
+              <div class="input-group" style="margin:1em;">
+                <span class="input-group-addon">$</span>
+              <input type="text" name="cost" class="form-control" ng-model="itemForm.cost" placeholder="net Cost for item"><br/>
+              </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
