@@ -14,7 +14,7 @@ public class ServerConfig extends ResourceConfig {
 	*/	
 	public ServerConfig(){
 		register(RequestContextFilter.class);
-		packages("com.nate.rest","com.wordnik.swagger.jaxrs.listing");
+		packages("com.nate.rest");
 		//register(PaymentService.class);
 		register(JacksonFeature.class);	
 		//register(JavaScriptService.class);

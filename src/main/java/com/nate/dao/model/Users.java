@@ -1,56 +1,46 @@
 package com.nate.dao.model;
 
-import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Table;
 import javax.persistence.Id;
-
+import javax.persistence.Table;
 
 @Entity
-@Table(name="Users")
-public class Users{
-	
-	@Id 
-	@Column(name="id")
-	private int id;
-	
-	@Column(name="Name")
-	private String Name;
-	
-	@Column(name="Age")
-	private String Age;
-	
-	@Column(name="DOB")
-	private String DOB;
-	public int getId() {
-		return id;
+@Table(name = "Users")
+public class Users {
+
+	@Id
+	@Column(name = "username")
+	private String username;
+
+	@Column(name = "password")
+	private String password;
+
+	@Column(name = "enabled")
+	private String enabled;
+
+	public String getUsername() {
+		return username;
 	}
-	public void setId(int id) {
-		this.id = id;
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
-	public String getName() {
-		return Name;
+
+	public String getPassword() {
+		return password;
 	}
-	public void setName(String name) {
-		Name = name;
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
-	public String getAge() {
-		return Age;
+
+	public String getEnabled() {
+		return enabled;
 	}
-	public void setAge(String age) {
-		Age = age;
+
+	public void setEnabled(String enabled) {
+		this.enabled = enabled;
 	}
-	public String getDOB() {
-		return DOB;
-	}
-	public void setDOB(String dOB) {
-		DOB = dOB;
-	}
-	
-	
-	
-	
+
 }

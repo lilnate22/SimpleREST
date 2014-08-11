@@ -1,0 +1,24 @@
+[33mcommit da95ef1c66d589483a8074008ea6c2d5f71419f3[m
+Author: lilnate22 <natefonseka@gmail.com>
+Date:   Wed Jul 30 09:57:28 2014 -0400
+
+    removing un needed files
+
+[33mcommit 30f82ee4d7c054f71f4484178a444e145e9d7a8b[m
+Merge: 29d6660 097c782
+Author: lilnate22 <natefonseka@gmail.com>
+Date:   Tue Jul 29 21:52:49 2014 -0400
+
+    Merge branch 'master' of https://github.com/lilnate22/SimpleREST
+
+[33mcommit 29d666003a6c323392394b99370a369b3e4857e5[m
+Author: lilnate22 <natefonseka@gmail.com>
+Date:   Tue Jul 29 21:50:33 2014 -0400
+
+    initial commit
+
+[33mcommit 097c78239362e264d0fd2598f6bcfa0f75860d1f[m
+Author: Nate Fonseka <natefonseka@gmail.com>
+Date:   Tue Jul 29 21:49:22 2014 -0400
+
+    Initial commit

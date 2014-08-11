@@ -7,9 +7,14 @@ import com.nate.dao.model.Users;
 
 public interface UserDAO{
 	
-	void Save(Users user);
-	void Delete();
-	void Update();
+
+	Users login(String user, String password);
+	
+	void logout(String sessionAPI);
+	
+	String saveToken(String username, String password, Long uid) throws Exception;
+	
+	boolean deleteToken(String token);
 	
 	List<Users> getAllUsers();
 	
